@@ -61,7 +61,7 @@ li a{
 .main-text{
     position: absolute;
     top: 40px;
-    width: 350px;
+    width: 335px;
     line-height: 105%;
 }
 
@@ -87,4 +87,28 @@ li a{
 
 
 
+
+
+
+.hover-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.hover-image {
+  position: absolute;
+  top: 10px;            /* ajuste la position */
+  left: 10%;
+  width: 60%;
+  z-index: 10;         /* au premier plan */
+  display: none;
+  border: 1px solid #ccc;
+  background: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+.hover-container:hover .hover-image {
+  display: block;
+}
 
